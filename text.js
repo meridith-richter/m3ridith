@@ -28,7 +28,7 @@ slideshow_images2=[
 	"web_assets/WellnessWednesday.png",
 	"web_assets/ThankfulThursday.png",
 	"web_assets/FirstLineFriday.png",
-	"web_assets/dot_dash_calendar.pdf"
+	"web_assets/d_d.png"
 ];
 
 //Array of links that your slideshow images will link to.  Should be in the same order as the images.
