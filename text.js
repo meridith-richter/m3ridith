@@ -22,34 +22,37 @@ slideshow_links=[
 
 //Array of images that will appear in the slideshow
 slideshow_images2=[
-	"web_assets/#WeekendVibes.png",
-	"web_assets/#MusicMonday.png",
-	"web_assets/#TipsTuesday.png",
-	"web_assets/#WellnessWednesday.png",
-	"web_assets/#ThankfulThursday.png.png",
-	"web_assets/#FirstLineFriday.png",
-	"web_assets/dot&dash_calendar.pdf"
+	"web_assets/WeekendVibes.png",
+	"web_assets/MusicMonday.png",
+	"web_assets/TipsTuesday.png",
+	"web_assets/WellnessWednesday.png",
+	"web_assets/ThankfulThursday.png.png",
+	"web_assets/FirstLineFriday.png",
+	"web_assets/dot_dash_calendar.pdf"
 ];
 
 //Array of links that your slideshow images will link to.  Should be in the same order as the images.
 slideshow_links2=[
-	"web_assets/#WeekendVibes.png",
-	"web_assets/#MusicMonday.png",
-	"web_assets/#TipsTuesday.png",
-	"web_assets/#WellnessWednesday.png",
-	"web_assets/#ThankfulThursday.png.png",
-	"web_assets/#FirstLineFriday.png",
-	"web_assets/dot&dash_calendar.pdf"
+	"web_assets/WeekendVibes.png",
+	"web_assets/MusicMonday.png",
+	"web_assets/TipsTuesday.png",
+	"web_assets/WellnessWednesday.png",
+	"web_assets/ThankfulThursday.png.png",
+	"web_assets/FirstLineFriday.png",
+	"web_assets/dot_dash_calendar.pdf"
 ]
 
 var counter;
 counter = 0;
 
+var counter2;
+counter = 0;
+
 document.getElementById("slideshow").src = slideshow_images[counter];
 document.getElementById("slideshowlink").href = slideshow_links[counter];
 
-document.getElementById("slideshow2").src = slideshow_images2[counter];
-document.getElementById("slideshowlink2").href = slideshow_links2[counter];
+document.getElementById("slideshow2").src = slideshow_images2[counter2];
+document.getElementById("slideshowlink2").href = slideshow_links2[counter2];
 
 function slideshownext(){
 
@@ -66,14 +69,14 @@ function slideshownext(){
 
 function slideshownext2(){
 
-	if (counter < slideshow_images2.length-1){
-		counter++;
+	if (counter2 < slideshow_images2.length-1){
+		counter2++;
 	}else{
-		counter = 0;
+		counter2 = 0;
 	}
 	
-	document.getElementById("slideshow2").src = slideshow_images2[counter];
-	document.getElementById("slideshowlink2").href = slideshow_links2[counter];
+	document.getElementById("slideshow2").src = slideshow_images2[counter2];
+	document.getElementById("slideshowlink2").href = slideshow_links2[counter2];
 }
 
 function slideshowprev(){
@@ -90,12 +93,12 @@ function slideshowprev(){
 
 function slideshowprev2(){
 	
-	if (counter > 0){
-		counter--;
+	if (counter2 > 0){
+		counter2--;
 	}else{
-		counter = slideshow_images2.length-1;
+		counter2 = slideshow_images2.length-1;
 	}
 	
-	document.getElementById("slideshow2").src = slideshow_images2[counter];
-	document.getElementById("slideshowlink2").href = slideshow_links2[counter];
+	document.getElementById("slideshow2").src = slideshow_images2[counter2];
+	document.getElementById("slideshowlink2").href = slideshow_links2[counter2];
 }
