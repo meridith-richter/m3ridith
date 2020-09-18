@@ -20,11 +20,36 @@ slideshow_links=[
 	"web_assets/QT_Poetry_and_Prose_Event.pdf"
 ]
 
+//Array of images that will appear in the slideshow
+slideshow_images2=[
+	"web_assets/#WeekendVibes.png",
+	"web_assets/#MusicMonday.png",
+	"web_assets/#TipsTuesday.png",
+	"web_assets/#WellnessWednesday.png",
+	"web_assets/#ThankfulThursday.png.png",
+	"web_assets/#FirstLineFriday.png",
+	"web_assets/dot&dash_calendar.pdf"
+];
+
+//Array of links that your slideshow images will link to.  Should be in the same order as the images.
+slideshow_links2=[
+	"web_assets/#WeekendVibes.png",
+	"web_assets/#MusicMonday.png",
+	"web_assets/#TipsTuesday.png",
+	"web_assets/#WellnessWednesday.png",
+	"web_assets/#ThankfulThursday.png.png",
+	"web_assets/#FirstLineFriday.png",
+	"web_assets/dot&dash_calendar.pdf"
+]
+
 var counter;
 counter = 0;
 
 document.getElementById("slideshow").src = slideshow_images[counter];
 document.getElementById("slideshowlink").href = slideshow_links[counter];
+
+document.getElementById("slideshow2").src = slideshow_images2[counter];
+document.getElementById("slideshowlink2").href = slideshow_links2[counter];
 
 function slideshownext(){
 
@@ -36,6 +61,9 @@ function slideshownext(){
 
 	document.getElementById("slideshow").src = slideshow_images[counter];
 	document.getElementById("slideshowlink").href = slideshow_links[counter];
+	
+	document.getElementById("slideshow2").src = slideshow_images2[counter];
+	document.getElementById("slideshowlink2").href = slideshow_links2[counter];
 }
 
 
@@ -49,4 +77,6 @@ function slideshowprev(){
 
 	document.getElementById("slideshow").src = slideshow_images[counter];
 	document.getElementById("slideshowlink").href = slideshow_links[counter];
+	document.getElementById("slideshow2").src = slideshow_images2[counter];
+	document.getElementById("slideshowlink2").href = slideshow_links2[counter];
 }
