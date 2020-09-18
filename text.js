@@ -61,11 +61,20 @@ function slideshownext(){
 
 	document.getElementById("slideshow").src = slideshow_images[counter];
 	document.getElementById("slideshowlink").href = slideshow_links[counter];
+}
+
+
+function slideshownext2(){
+
+	if (counter < slideshow_images2.length-1){
+		counter++;
+	}else{
+		counter = 0;
+	}
 	
 	document.getElementById("slideshow2").src = slideshow_images2[counter];
 	document.getElementById("slideshowlink2").href = slideshow_links2[counter];
 }
-
 
 function slideshowprev(){
 	
@@ -77,6 +86,16 @@ function slideshowprev(){
 
 	document.getElementById("slideshow").src = slideshow_images[counter];
 	document.getElementById("slideshowlink").href = slideshow_links[counter];
+}
+
+function slideshowprev2(){
+	
+	if (counter > 0){
+		counter--;
+	}else{
+		counter = slideshow_images2.length-1;
+	}
+	
 	document.getElementById("slideshow2").src = slideshow_images2[counter];
 	document.getElementById("slideshowlink2").href = slideshow_links2[counter];
 }
