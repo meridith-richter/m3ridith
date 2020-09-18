@@ -26,7 +26,7 @@ slideshow_images2=[
 	"web_assets/MusicMonday.png",
 	"web_assets/TipsTuesday.png",
 	"web_assets/WellnessWednesday.png",
-	"web_assets/ThankfulThursday.png.png",
+	"web_assets/ThankfulThursday.png",
 	"web_assets/FirstLineFriday.png",
 	"web_assets/dot_dash_calendar.pdf"
 ];
@@ -37,7 +37,7 @@ slideshow_links2=[
 	"web_assets/MusicMonday.png",
 	"web_assets/TipsTuesday.png",
 	"web_assets/WellnessWednesday.png",
-	"web_assets/ThankfulThursday.png.png",
+	"web_assets/ThankfulThursday.png",
 	"web_assets/FirstLineFriday.png",
 	"web_assets/dot_dash_calendar.pdf"
 ]
@@ -46,7 +46,7 @@ var counter;
 counter = 0;
 
 var counter2;
-counter = 0;
+counter2 = 0;
 
 document.getElementById("slideshow").src = slideshow_images[counter];
 document.getElementById("slideshowlink").href = slideshow_links[counter];
