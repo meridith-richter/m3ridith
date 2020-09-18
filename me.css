@@ -33,6 +33,10 @@ h2{
 	font-size: 220%;
 	/*float: left;*/
 }
+h1{
+	font-size: 180%;
+	/*float: left;*/
+}
 
 #resume{
 	float: left;
