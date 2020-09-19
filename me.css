@@ -29,14 +29,6 @@ header{
 	font-weight: bolder;
 	font-style: italic;
 }
-h2{
-	font-size: 220%;
-	/*float: left;*/
-}
-h3{
-	font-size: 180%;
-	/*float: left;*/
-}
 
 #resume{
 	float: left;
